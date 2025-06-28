@@ -36,6 +36,7 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+
 # Ignore AppData directory
 AppData/
 
