@@ -1,0 +1,22 @@
+# .easignore
+
+# node modules
+node_modules/
+
+# Expo files
+.expo/
+
+# build output
+dist/
+
+# env files
+.env
+*.env
+.env.*
+
+# editor
+.vscode/
+.idea/
+
+# system files
+.DS_Store
