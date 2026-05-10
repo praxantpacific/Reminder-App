@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reservation Plus – Cat Kennel Booking</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+
+ <link rel="stylesheet" href="../styles/cat.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="brand-row">
+      <div class="brand-icon">🐾</div>
+
+      <h1 class="brand-name">
+        Reservation <span>Cats</span>
+      </h1>
+    </div>
+
+    <p class="brand-tagline">
+      Caring for your companion while you're away
+    </p>
+
+    <div class="divider"></div>
+  </header>
+
+ <nav class="page-nav">
+  <a href="./cat.html" class="active">🐱 Cat Booking</a>
+  <a href="./dog.html">🐶 Dog Booking</a>
+</nav>
+
+  <main>
+    <div class="form-card">
+
+           <hr class="section-sep" />
+
+      <!-- Cat Info -->
+      <p class="form-section-title">Cat Information</p>
+
+      <div class="grid-2">
+
+        <div class="form-group">
+          <label for="cat-name">
+  Cat's Name <span class="req">*</span>
+</label>
+          </label>
+
+          <input type="text" id="cat-name" placeholder="Whiskers" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cat-age">Age (years)</label>
+
+          <input type="number" id="cat-age" placeholder="3" />
+        </div>
+
+      </div>
+
+      <hr class="section-sep" />
+
+      <!-- Stay Details -->
+      <p class="form-section-title">Stay Details</p>
+
+      <div class="grid-2">
+
+        <div class="form-group">
+          <label for="check-in">
+            Check-in Date <span class="req">*</span>
+          </label>
+
+          <input type="date" id="check-in" required />
+        </div>
+
+        <div class="form-group">
+          <label for="check-out">
+            Check-out Date <span class="req">*</span>
+          </label>
+
+          <input type="date" id="check-out" required />
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label>Duration</label>
+
+        <div class="duration-row">
+          <input type="number" id="stay-days" readonly />
+
+          <span class="duration-label">
+            nights
+          </span>
+        </div>
+      </div>
+
+      <hr class="section-sep" />
+
+      <!-- Kennel Selection -->
+      <p class="form-section-title">Select a Kennel</p>
+
+      <div class="kennel-grid" id="kennel-grid"></div>
+
+      <!-- Summary -->
+      <div class="summary-box" id="summary-box">
+
+        <p class="summary-title">
+          📋 Booking Summary
+        </p>
+
+        <div class="summary-row">
+          <span class="summary-key">Cat</span>
+          <span class="summary-val" id="s-cat">–</span>
+        </div>
+
+        <div class="summary-row">
+          <span class="summary-key">Kennel</span>
+          <span class="summary-val" id="s-kennel">–</span>
+        </div>
+
+      </div>
+
+      <button class="submit-btn" id="submit-btn">
+        Confirm Cat Kennel Reservation 🐱
+      </button>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Reservation Plus · All rights reserved
+  </footer>
+
+  <div class="toast" id="toast">
+    Reservation confirmed!
+  </div>
+
+  <script src="../js/cat.js"></script>
+
+</body>
+</html>

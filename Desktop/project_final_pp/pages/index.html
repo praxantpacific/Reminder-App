@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation Plus</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand-row">
+      <div class="brand-icon">🐾</div>
+      <h1 class="brand-name">Reservation <span>Plus</span></h1>
+    </div>
+
+    <p class="brand-tagline">
+      "Where every paw finds a place to stay in comfort &amp; care."
+    </p>
+
+    <div class="divider"></div>
+  </header>
+
+  <!-- Form -->
+  <main>
+    <div class="form-card">
+
+      <p class="form-section-title">Guest Information</p>
+
+      <div class="form-group">
+        <label for="name">Customer Name</label>
+        <input type="text" id="name" placeholder="e.g. Priya Sharma" autocomplete="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Street, City, Country" autocomplete="street-address" />
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+411" autocomplete="tel" />
+        </div>
+      </div>
+
+      <!-- Animal selection -->
+      <p class="animal-section-title">Choose Animal Type</p>
+
+      <p class="animal-subtitle">
+        Select the companion joining us for their stay
+      </p>
+
+      <div class="animal-cards">
+
+        <!-- Cat -->
+        <label class="animal-card-label">
+          <input type="radio" name="animal" value="cat" />
+
+          <div class="animal-card-inner">
+            <div class="check-badge">
+              <svg viewBox="0 0 12 12">
+                <polyline points="2,6 5,9 10,3"/>
+              </svg>
+            </div>
+
+            <span class="animal-emoji">🐱</span>
+            <span class="animal-name">Cat</span>
+
+            <span class="animal-desc">
+              Graceful, independent &amp; oh-so-curious companions
+            </span>
+          </div>
+        </label>
+
+        <!-- Dog -->
+        <label class="animal-card-label">
+          <input type="radio" name="animal" value="dog" />
+
+          <div class="animal-card-inner">
+            <div class="check-badge">
+              <svg viewBox="0 0 12 12">
+                <polyline points="2,6 5,9 10,3"/>
+              </svg>
+            </div>
+
+            <span class="animal-emoji">🐶</span>
+            <span class="animal-name">Dog</span>
+
+            <span class="animal-desc">
+              Loyal, playful &amp; full-of-heart best friends
+            </span>
+          </div>
+        </label>
+
+      </div>
+
+      <!-- Submit -->
+      <button class="submit-btn" onclick="handleSubmit()">
+        <span class="submit-btn-content">
+
+          <svg width="18" height="18" viewBox="0 0 18 18"
+               fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round">
+
+            <path d="M9 1l2.5 5.5L17 7.6l-4 3.9 1 5.5L9 14.1 4 17l1-5.5L1 7.6l5.5-1z"/>
+          </svg>
+
+          Confirm Reservation
+        </span>
+      </button>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Reservation Plus · All rights reserved
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    🐾 Reservation submitted! We'll be in touch soon.
+  </div>
+
+  <!-- External JS -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
